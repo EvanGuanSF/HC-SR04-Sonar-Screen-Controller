@@ -1,0 +1,9 @@
+[Unit]
+Description=Sonar Screen Controller
+After=graphical.target
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/sbin/screen_controller/Sonar_Screen_Controller.py
+
+[Install]
+WantedBy=graphical.target
